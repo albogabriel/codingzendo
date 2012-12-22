@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FormIsEmptiness::Application.load_tasks
+Codingzendo::Application.load_tasks
