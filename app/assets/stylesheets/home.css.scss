@@ -1,0 +1,33 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html,body,#wrap {
+    height: 100%;
+}
+
+#wrap {
+    width: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 55px;
+    font-weight: bold;
+    height:100%;
+}
+
+.leftPanel {
+    float:left; 
+    width: 50%;
+    background-color: white;
+    text-align:right;
+    padding-top:180px;
+    height: 100%;
+}
+
+.rightPanel {
+    float: right;
+    background-color: black;
+    color:white;
+    height: 100%;
+    width: 50%;
+    padding-top:200px;
+}
