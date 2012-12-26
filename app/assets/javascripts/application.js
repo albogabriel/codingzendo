@@ -16,6 +16,21 @@
 
 $(document).ready(function(){
 
+		function shadow(element){
+			$(element).css("text-shadow", "2px 2px grey");
+		};
+
+		function unShadow(element){
+			$(element).css("text-shadow", "");
+		};
+
+    	function showImagesAndText(imageName, textId){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
+    		$(".bulls").addClass(imageName);
+    		$(textId).css("display", "block");
+    	};
+
     	$("#fo1").hover(function(){shadow("#fo1");},function(){unShadow("#fo1");});	
     	$("#fo2").hover(function(){shadow("#fo2");},function(){unShadow("#fo2");});			
     	$("#rm1").hover(function(){shadow("#rm1");},function(){unShadow("#rm1");});			
@@ -26,74 +41,15 @@ $(document).ready(function(){
     	$("#empti2").hover(function(){shadow("#empti2");},function(){unShadow("#empti2");});			
     	$("#ness1").hover(function(){shadow("#ness1");},function(){unShadow("#ness1");});			
     	$("#ness2").hover(function(){shadow("#ness2");},function(){unShadow("#ness2");});			
-
-		function shadow(element){
-			$(element).css("text-shadow", "2px 2px grey");
-		};
-
-		function unShadow(element){
-			$(element).css("text-shadow", "");
-		};
 	
-
-    	$("#fo1").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull01");
-    		$("#text01").css("display", "block");
-    	});
-    	$("#rm1").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull02");
-    		$("#text02").css("display", "block");
-    	});
-    	$("#is1").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull03");
-    		$("#text03").css("display", "block");
-    	});
-    	$("#empti1").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull04");
-    		$("#text04").css("display", "block");
-    	});
-    	$("#ness1").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull05");
-    		$("#text05").css("display", "block");
-    	});
-    	$("#empti2").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull06");
-    		$("#text06").css("display", "block");
-    	});
-    	$("#ness2").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull07");
-    		$("#text07").css("display", "block");
-    	});
-    	$("#is2").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull08");
-    		$("#text08").css("display", "block");
-    	});
-    	$("#fo2").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull09");
-    		$("#text09").css("display", "block");
-    	});
-    	$("#rm2").click(function(){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
-    		$(".bulls").addClass("bull10");
-    		$("#text10").css("display", "block");
-    	});
+    	$("#fo1").click(function(){showImagesAndText("bull01","#text01");});
+    	$("#rm1").click(function(){showImagesAndText("bull02","#text02");});
+    	$("#is1").click(function(){showImagesAndText("bull03","#text03");});
+    	$("#empti1").click(function(){showImagesAndText("bull04","#text04");});
+    	$("#ness1").click(function(){showImagesAndText("bull05","#text05");});
+    	$("#empti2").click(function(){showImagesAndText("bull06","#text06");});
+    	$("#ness2").click(function(){showImagesAndText("bull07","#text07");});
+    	$("#is2").click(function(){showImagesAndText("bull08","#text08");});
+    	$("#fo2").click(function(){showImagesAndText("bull09","#text09");});
+    	$("#rm2").click(function(){showImagesAndText("bull10","#text10");});
     });
