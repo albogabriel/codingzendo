@@ -19,7 +19,7 @@ html,body,#wrap {
     width: 50%;
     background-color: white;
     text-align:right;
-    padding-top:180px;
+    padding-top:80px;
     height: 100%;
 }
 
@@ -29,5 +29,53 @@ html,body,#wrap {
     color:white;
     height: 100%;
     width: 50%;
-    padding-top:200px;
+    padding-top:100px;
+}
+
+.bulls{
+    height:218px;
+    background: url("10bulls.png");
+    background-repeat: no-repeat;
+    background-position: 0px 234px;
+    text-align: right;
+}
+
+.bull01{
+    background-position: 0px 0px;
+}
+
+.bull02{
+    background-position: 0px -234px;
+}
+
+.bull03{
+    background-position: 0px -468px;
+}
+
+.bull04{
+    background-position: 0px -702px;    
+}
+
+.bull05{
+    background-position: 0px -936px;    
+}
+
+.bull06{
+    background-position: 0px -1159px;
+}
+
+.bulls.bull07{
+    background-position: 0px -1393px;    
+}
+
+.bull08{
+    background-position: 0px -1627px;    
+}
+
+.bull09{
+    background-position: 0px -1861px;
+}
+
+.bull10{
+    background-position: 0px -2095px;    
 }

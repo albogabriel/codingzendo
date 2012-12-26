@@ -1,15 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Form is Emptiness</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    	// var text = $('#formText').text();
+    	// text = text.split("");
+    	// alert(text);
+    	// for(var i=0;i<text.length;i++){
+    	// 	$('#formText').append("<div> ").append(text[i]).append("</div>");
+    	// }
+    	// $('#formText').append("<div style='background-color:red;'>Emptiness is form.</div>");
+
+    	$("#form").click(function(){
+    		$(".bulls").addClass("bull01");
+    	});
+    });
+</script>
+  <title>Coding Zendo</title>
 </head>
 <body>
 <div id="wrap">
     <div class="leftPanel">
-      Form is emptiness
+      <div id="formText"><span id="form">Form</span> is emptiness</div>
+      <div class="bulls"></div>
     </div>
     <div class="rightPanel">
-      Emptiness is form
+      <div id="emptinessText">Emptiness is form</div>
     </div>
     <div style="clear: both;">
 </div>
