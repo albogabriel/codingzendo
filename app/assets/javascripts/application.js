@@ -17,115 +17,133 @@
 $(document).ready(function(){
 
     	$("#fo1").hover(function(){
-    		$("#fo1").css("text-shadow", "1px 1px grey");
+    		$("#fo1").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#fo1").css("text-shadow", "");
     	});			
 
     	$("#fo2").hover(function(){
-    		$("#fo2").css("text-shadow", "1px 1px grey");
+    		$("#fo2").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#fo2").css("text-shadow", "");
     	});			
 
 		$("#rm1").hover(function(){
-    		$("#rm1").css("text-shadow", "1px 1px grey");
+    		$("#rm1").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#rm1").css("text-shadow", "");
     	});			
 
     	$("#rm2").hover(function(){
-    		$("#rm2").css("text-shadow", "1px 1px grey");
+    		$("#rm2").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#rm2").css("text-shadow", "");
     	});		
 
     	$("#is1").hover(function(){
-    		$("#is1").css("text-shadow", "1px 1px grey");
+    		$("#is1").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#is1").css("text-shadow", "");
     	});		
 
     	$("#is2").hover(function(){
-    		$("#is2").css("text-shadow", "1px 1px grey");
+    		$("#is2").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#is2").css("text-shadow", "");
     	});		
 
     	$("#empti1").hover(function(){
-    		$("#empti1").css("text-shadow", "1px 1px grey");
+    		$("#empti1").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#empti1").css("text-shadow", "");
     	});		
 
     	$("#empti2").hover(function(){
-    		$("#empti2").css("text-shadow", "1px 1px grey");
+    		$("#empti2").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#empti2").css("text-shadow", "");
     	});
 
     	$("#ness1").hover(function(){
-    		$("#ness1").css("text-shadow", "1px 1px grey");
+    		$("#ness1").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#ness1").css("text-shadow", "");
     	});		
 
     	$("#ness2").hover(function(){
-    		$("#ness2").css("text-shadow", "1px 1px grey");
+    		$("#ness2").css("text-shadow", "2px 2px grey");
     	},
     	function(){
     		$("#ness2").css("text-shadow", "");
     	});		
 
-
-
     	$("#fo1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull01");
+    		$("#text01").css("display", "block");
     	});
     	$("#rm1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull02");
+    		$("#text02").css("display", "block");
     	});
     	$("#is1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull03");
+    		$("#text03").css("display", "block");
     	});
     	$("#empti1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull04");
+    		$("#text04").css("display", "block");
     	});
     	$("#ness1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull05");
+    		$("#text05").css("display", "block");
     	});
     	$("#empti2").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull06");
+    		$("#text06").css("display", "block");
     	});
     	$("#ness2").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull07");
+    		$("#text07").css("display", "block");
     	});
     	$("#is2").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull08");
+    		$("#text08").css("display", "block");
     	});
     	$("#fo2").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull09");
+    		$("#text09").css("display", "block");
     	});
     	$("#rm2").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
     		$(".bulls").addClass("bull10");
+    		$("#text10").css("display", "block");
     	});
     });
