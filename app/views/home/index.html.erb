@@ -4,13 +4,78 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-    	// var text = $('#formText').text();
-    	// text = text.split("");
-    	// alert(text);
-    	// for(var i=0;i<text.length;i++){
-    	// 	$('#formText').append("<div> ").append(text[i]).append("</div>");
-    	// }
-    	// $('#formText').append("<div style='background-color:red;'>Emptiness is form.</div>");
+
+    	$("#fo1").hover(function(){
+    		$("#fo1").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#fo1").css("text-shadow", "");
+    	});			
+
+    	$("#fo2").hover(function(){
+    		$("#fo2").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#fo2").css("text-shadow", "");
+    	});			
+
+		$("#rm1").hover(function(){
+    		$("#rm1").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#rm1").css("text-shadow", "");
+    	});			
+
+    	$("#rm2").hover(function(){
+    		$("#rm2").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#rm2").css("text-shadow", "");
+    	});		
+
+    	$("#is1").hover(function(){
+    		$("#is1").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#is1").css("text-shadow", "");
+    	});		
+
+    	$("#is2").hover(function(){
+    		$("#is2").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#is2").css("text-shadow", "");
+    	});		
+
+    	$("#empti1").hover(function(){
+    		$("#empti1").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#empti1").css("text-shadow", "");
+    	});		
+
+    	$("#empti2").hover(function(){
+    		$("#empti2").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#empti2").css("text-shadow", "");
+    	});
+
+    	$("#ness1").hover(function(){
+    		$("#ness1").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#ness1").css("text-shadow", "");
+    	});		
+
+    	$("#ness2").hover(function(){
+    		$("#ness2").css("text-shadow", "1px 1px grey");
+    	},
+    	function(){
+    		$("#ness2").css("text-shadow", "");
+    	});		
+
+
 
     	$("#fo1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
