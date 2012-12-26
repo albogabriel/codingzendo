@@ -12,8 +12,45 @@
     	// }
     	// $('#formText').append("<div style='background-color:red;'>Emptiness is form.</div>");
 
-    	$("#form").click(function(){
+    	$("#fo1").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
     		$(".bulls").addClass("bull01");
+    	});
+    	$("#rm1").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull02");
+    	});
+    	$("#is1").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull03");
+    	});
+    	$("#empti1").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull04");
+    	});
+    	$("#ness1").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull05");
+    	});
+    	$("#empti2").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull06");
+    	});
+    	$("#ness2").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull07");
+    	});
+    	$("#is2").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull08");
+    	});
+    	$("#fo2").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull09");
+    	});
+    	$("#rm2").click(function(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".bulls").addClass("bull10");
     	});
     });
 </script>
@@ -22,11 +59,19 @@
 <body>
 <div id="wrap">
     <div class="leftPanel">
-      <div id="formText"><span id="form">Form</span> is emptiness</div>
+      <div id="formText">
+      	<span id="fo1">Fo</span><span id="rm1">rm</span> 
+      	<span id="is1"> is</span> 
+      	<span id="empti1"> empti</span><span id="ness1">ness</span> 
+      </div>
       <div class="bulls"></div>
     </div>
     <div class="rightPanel">
-      <div id="emptinessText">Emptiness is form</div>
+      <div id="emptinessText">
+		<span id="empti2">Empti</span><span id="ness2">ness</span> 
+      	<span id="is2"> is</span> 
+      	<span id="fo2"> fo</span><span id="rm2">rm</span> 
+      </div>
     </div>
     <div style="clear: both;">
 </div>
