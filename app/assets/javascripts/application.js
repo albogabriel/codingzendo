@@ -16,75 +16,25 @@
 
 $(document).ready(function(){
 
-    	$("#fo1").hover(function(){
-    		$("#fo1").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#fo1").css("text-shadow", "");
-    	});			
+    	$("#fo1").hover(function(){shadow("#fo1");},function(){unShadow("#fo1");});	
+    	$("#fo2").hover(function(){shadow("#fo2");},function(){unShadow("#fo2");});			
+    	$("#rm1").hover(function(){shadow("#rm1");},function(){unShadow("#rm1");});			
+    	$("#rm2").hover(function(){shadow("#rm2");},function(){unShadow("#rm2");});			
+    	$("#is1").hover(function(){shadow("#is1");},function(){unShadow("#is1");});			
+    	$("#is2").hover(function(){shadow("#is2");},function(){unShadow("#is2");});			
+    	$("#empti1").hover(function(){shadow("#empti1");},function(){unShadow("#empti1");});			
+    	$("#empti2").hover(function(){shadow("#empti2");},function(){unShadow("#empti2");});			
+    	$("#ness1").hover(function(){shadow("#ness1");},function(){unShadow("#ness1");});			
+    	$("#ness2").hover(function(){shadow("#ness2");},function(){unShadow("#ness2");});			
 
-    	$("#fo2").hover(function(){
-    		$("#fo2").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#fo2").css("text-shadow", "");
-    	});			
+		function shadow(element){
+			$(element).css("text-shadow", "2px 2px grey");
+		};
 
-		$("#rm1").hover(function(){
-    		$("#rm1").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#rm1").css("text-shadow", "");
-    	});			
-
-    	$("#rm2").hover(function(){
-    		$("#rm2").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#rm2").css("text-shadow", "");
-    	});		
-
-    	$("#is1").hover(function(){
-    		$("#is1").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#is1").css("text-shadow", "");
-    	});		
-
-    	$("#is2").hover(function(){
-    		$("#is2").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#is2").css("text-shadow", "");
-    	});		
-
-    	$("#empti1").hover(function(){
-    		$("#empti1").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#empti1").css("text-shadow", "");
-    	});		
-
-    	$("#empti2").hover(function(){
-    		$("#empti2").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#empti2").css("text-shadow", "");
-    	});
-
-    	$("#ness1").hover(function(){
-    		$("#ness1").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#ness1").css("text-shadow", "");
-    	});		
-
-    	$("#ness2").hover(function(){
-    		$("#ness2").css("text-shadow", "2px 2px grey");
-    	},
-    	function(){
-    		$("#ness2").css("text-shadow", "");
-    	});		
+		function unShadow(element){
+			$(element).css("text-shadow", "");
+		};
+	
 
     	$("#fo1").click(function(){
     		$(".bulls").removeClass().addClass("bulls");
