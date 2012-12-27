@@ -17,7 +17,7 @@
 $(document).ready(function(){
 
 		function shadow(element){
-			$(element).css("text-shadow", "2px 2px grey");
+			$(element).css("text-shadow", "3px  3px 3px grey");
 		};
 
 		function unShadow(element){
@@ -25,11 +25,15 @@ $(document).ready(function(){
 		};
 
     	function showImagesAndText(imageName, textId){
-    		$(".bulls").removeClass().addClass("bulls");
-    		$(".textItems").css("display", "none");
+    		clearImagesAndText();
     		$(".bulls").addClass(imageName);
     		$(textId).css("display", "block");
     	};
+
+    	function clearImagesAndText(){
+    		$(".bulls").removeClass().addClass("bulls");
+    		$(".textItems").css("display", "none");
+    	}
 
     	$("#fo1").hover(function(){shadow("#fo1");},function(){unShadow("#fo1");});	
     	$("#fo2").hover(function(){shadow("#fo2");},function(){unShadow("#fo2");});			
@@ -52,4 +56,5 @@ $(document).ready(function(){
     	$("#is2").click(function(){showImagesAndText("bull08","#text08");});
     	$("#fo2").click(function(){showImagesAndText("bull09","#text09");});
     	$("#rm2").click(function(){showImagesAndText("bull10","#text10");});
+    	$("#enso").click(function(){clearImagesAndText();});
     });
